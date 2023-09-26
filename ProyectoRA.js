@@ -5,7 +5,7 @@ var adivinanzas = [
     },
     {
         pregunta: "En un día hay 4, en un año hay 2, en una semana hay 6, ¿qué es?",
-        respuesta: "La letra 'a'"
+        respuesta: "La letra a"
     },
     {
         pregunta: "Tiene dientes y no come, tiene cabeza y no es hombre.",
@@ -36,7 +36,7 @@ function verificarRespuesta() {
     if (respuestaUsuario === respuestaCorrecta) {
         resultado.textContent = "¡Correcto! ¡Has adivinado la respuesta!";
     } else {
-        resultado.textContent = "Incorrecto. Inténtalo de nuevo.";
+        resultado.textContent= "Incorrecto. Inténtalo de nuevo.";
     }
 
     // Pasar a la siguiente pregunta o finalizar el juego
