@@ -17,7 +17,7 @@
             <h2>
                 Bienvenido al sistema de gestiond de alumnos
             </h2>
-            <img src="imagenes/logo1.png" alt="">
+            <img src="imagenes/logocetis.png" alt="">
         </div>
     </div>
     </div>

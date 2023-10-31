@@ -12,15 +12,15 @@
     include 'menu.php';
     include 'conexion.php';
 
-    $sql = "SELECT = FROM alumnos";
-    $datos = $conexion =query($sql);
+    $sql = "SELECT * FROM alumnos";
+    $datos = $conexion->query($sql);
 
     ?>
 
     <div class="contariner">
         <div class="row">
             <div class="col-12">
-                <?php if($datos->num_row>0){ ?>
+                <?php if($datos->num_rows>0){ ?>
                     <table class="table table-hover">
                     <thead>
                         <tr>
@@ -44,8 +44,8 @@
                                 <td><?php echo $registro["turno"]; ?></td>
                                 <td><?php echo $registro["sexo"]; ?></td>
                                 <td>
-                                    <a href="" class="btn btn-xs btn-primary">editar</a>
-                                    <a href="" class="btn btn-xs btn-danger">Eliminar</a>
+                                    <a href="editarAlumno.php?id=<?php echo $registro['id']; ?>" class="btn btn-sm btn-primary">Editar</a>
+                                    <a href="eliminarAlumno.php?id=<?php echo $registro['id']; ?>" class="btn btn-sm btn-danger">Eliminar</a>
                                 </td>
                             </tr>
 
