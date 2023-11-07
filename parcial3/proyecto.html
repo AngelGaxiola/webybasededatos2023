@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanzas</title>
+
+</head>
+<body>
+    <h1>Juego de Adivinanzas</h1>
+    <p>Adivina la respuesta a la siguiente adivinanza:</p>
+    <p id="adivinanza"></p>
+    <input type="text" id="respuesta" placeholder="Tu respuesta">
+    <p id="resultado"></p>
+
+    <script>
+        var adivinanzas = [
+            { pregunta: "Tiene patas pero no camina, tiene cabeza pero no piensa. ¿Qué es?", respuesta: "una mesa" },
+            { pregunta: "Blanco por dentro, verde por fuera, si te lo sabes, eres muy astuto. ¿Qué es?", respuesta: "una sandía" }
+        ];
+
+        var indiceAdivinanzaActual = 0;
+
+        function mostrarAdivinanza() {
+            document.getElementById("adivinanza").textContent = adivinanzas[indiceAdivinanzaActual].pregunta;
+        }
+
+    </script>
+</body>
+</html>

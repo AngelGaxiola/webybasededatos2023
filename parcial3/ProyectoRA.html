@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanzas</title>
+    <script src="ProyectoRA.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('imagen.jpg')
+        }
+        #resultado {
+            color: black; 
+        }
+
+        .correcto {
+            color: green; /* Color de texto para respuestas correctas */
+        }
+
+        .incorrecto {
+            color: red; /* Color de texto para respuestas incorrectas */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Juego de Adivinanzas</h1>
+    <p style="color: white;"  id="adivinanza"></p>
+    <input type="text" id="respuesta" placeholder="Tu respuesta">
+    <button onclick="verificarRespuesta()">Verificar</button>
+    <p id="resultado" style="color: white;"></p>
+</body>
+</html>
