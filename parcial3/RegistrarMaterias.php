@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 card p-4"></div>
-            <form action="">
+            <form action="GuardarMateria.php" method="POST">
                 <div class="from-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" name="nombre" placeholder="teclea la materia">
@@ -25,7 +25,7 @@
                 </div><br>
 
                 <div class="form-group">
-                    <select name="semestre" class="form-control">
+                    <select name="especialidad" class="form-control">
                         <option value="">selecciona una especialidad</option>
                         <option value="PROGRAMACION">PROGRAMACION</option>
                         <option value="CONTABILIDAD">CONTABILIDAD</option>
