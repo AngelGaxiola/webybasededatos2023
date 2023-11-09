@@ -43,15 +43,15 @@
                             <td><?php echo $registro["semestre"]; ?></td>
                             <td><?php echo $registro["especialidad"]; ?></td>
                             <td>
-                                <a href="" class="btn btn-danger" class="btn btn-sm btn-primary">Editar</a>
-                                <a href="" class="btn btn-danger" class="btn btn-sm btn-danger">Eliminar</a>
+                            <a href="editarMateria.php?id=<?php echo $registro["id"]; ?>" class="btn btn-primary">Editar</a>
+                            <a href="eliminarMateria.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-danger">Eliminar</a>
                             </td>
                         </tr>
                         <?php } ?>
                     </tbody>
                 </table>
         <?php }else{ ?>
-            <center><h2>No existen datos del alumno en la base de datos</h2></center>
+            <center><h2>No existen datos de materia en la base de datos</h2></center>
         <?php } ?>
             </div>
         </div>
