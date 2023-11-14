@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2023 a las 02:59:31
+-- Tiempo de generación: 14-11-2023 a las 03:14:44
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -54,6 +54,18 @@ INSERT INTO `alumnos` (`id`, `nombre`, `numero_control`, `semestre`, `edad`, `tu
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `alumno_materias`
+--
+
+CREATE TABLE `alumno_materias` (
+  `id` int(11) NOT NULL,
+  `alumno_id` int(11) NOT NULL,
+  `materia_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `materia`
 --
 
@@ -85,6 +97,12 @@ ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `alumno_materias`
+--
+ALTER TABLE `alumno_materias`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `materia`
 --
 ALTER TABLE `materia`
@@ -99,6 +117,12 @@ ALTER TABLE `materia`
 --
 ALTER TABLE `alumnos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT de la tabla `alumno_materias`
+--
+ALTER TABLE `alumno_materias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `materia`
