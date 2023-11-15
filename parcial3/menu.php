@@ -21,10 +21,11 @@
             Opciones
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Acción</a></li>
-            <li><a class="dropdown-item" href="consultarAlumnos.php">Consultar alumnos</a></li>
+            <li><a class="dropdown-item" href="inicio.php">Inicio</a></li>
+            <li><a class="dropdown-item" href="consultarAlumnos.php">Consultar Alumno</a></li>
+            <li><a class="dropdown-item" href="RegistrarAlumno.php">Registar alumno</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="RegistrarAlumno.php">Registrar Alumno</a></li>
+            <li><a class="dropdown-item" href="AsignarMateria.php">Asignar Materias</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
